@@ -1,7 +1,4 @@
-import utils.Date;
-import utils.Password;
-
-import java.util.Scanner;
+package Date_Password.utils;
 
 public class Main {
     public static void main (String[] args) {
