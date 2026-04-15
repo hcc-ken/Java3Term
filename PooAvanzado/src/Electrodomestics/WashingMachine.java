@@ -28,4 +28,8 @@ public class WashingMachine extends Electrodomestic{
         this.load = load;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + ", load: " + load;
+    }
 }

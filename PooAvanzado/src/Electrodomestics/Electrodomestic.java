@@ -79,4 +79,9 @@ public class Electrodomestic {
             this.color = color;
         } else this.color = DEFAULT_COLOR;
     }
+
+    @Override
+    public String toString() {
+        return "This is an electrodomestic";
+    }
 }
