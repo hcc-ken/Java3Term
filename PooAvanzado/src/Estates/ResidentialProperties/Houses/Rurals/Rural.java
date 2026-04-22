@@ -12,8 +12,8 @@ public class Rural extends House {
         altitude = 0;
     }
 
-    public Rural(int identifier, int area, String address, int numberOfRooms, int numberOfBathrooms, int numberOfFloors, int distanceToTheCity, int altitude) {
-        super(identifier, area, address, numberOfRooms, numberOfBathrooms, numberOfFloors);
+    public Rural(int area, String address, int numberOfRooms, int numberOfBathrooms, int numberOfFloors, int distanceToTheCity, int altitude) {
+        super(area, address, numberOfRooms, numberOfBathrooms, numberOfFloors);
         this.distanceToTheCity = distanceToTheCity;
         this.altitude = altitude;
     }

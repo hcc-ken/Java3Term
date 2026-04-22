@@ -12,8 +12,8 @@ public class Gate extends Urban {
         gatedCommunity = false;
     }
 
-    public Gate(int identifier, int area, String address, int numberOfRooms, int numberOfBathrooms, int numberOfFloors, int administrationValue, boolean gatedCommunity) {
-        super(identifier, area, address, numberOfRooms, numberOfBathrooms, numberOfFloors);
+    public Gate(int area, String address, int numberOfRooms, int numberOfBathrooms, int numberOfFloors, int administrationValue, boolean gatedCommunity) {
+        super(area, address, numberOfRooms, numberOfBathrooms, numberOfFloors);
         this.administrationValue = administrationValue;
         this.gatedCommunity = gatedCommunity;
     }

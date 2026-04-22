@@ -6,8 +6,8 @@ public class Independant extends Urban {
         super();
     }
 
-    public Independant (int identifier, int area, String address, int numberOfRooms, int numberOfBathrooms, int numberOfFloors) {
-        super(identifier, area, address, numberOfRooms, numberOfBathrooms, numberOfFloors);
+    public Independant (int area, String address, int numberOfRooms, int numberOfBathrooms, int numberOfFloors) {
+        super(area, address, numberOfRooms, numberOfBathrooms, numberOfFloors);
     }
 
     @Override

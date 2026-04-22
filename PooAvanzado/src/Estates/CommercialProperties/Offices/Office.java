@@ -10,8 +10,8 @@ public class Office extends CommercialProperty {
         gov = false;
     }
 
-    public Office (int identifier, int area, String address, boolean locationExterior, boolean gov) {
-        super(identifier, area, address, locationExterior);
+    public Office (int area, String address, boolean locationExterior, boolean gov) {
+        super(area, address, locationExterior);
         this.gov = gov;
     }
 

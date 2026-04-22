@@ -10,8 +10,8 @@ public class Commercial extends CommercialProperty {
         location = "";
     }
 
-    public Commercial (int identifier, int area, String address, boolean locationExterior, String location) {
-        super(identifier, area, address, locationExterior);
+    public Commercial (int area, String address, boolean locationExterior, String location) {
+        super(area, address, locationExterior);
         this.location = location;
     }
 

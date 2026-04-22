@@ -7,8 +7,8 @@ public class Studio extends Apartment {
         super();
     }
 
-    public Studio(int identifier, int area, String address, int administrationValue) { // Numbers of rooms are not necessary since it'll always be 1, as it is for bathroom.
-        super(identifier, area, address, 1, 1, administrationValue);
+    public Studio(int area, String address, int administrationValue) { // Numbers of rooms are not necessary since it'll always be 1, as it is for bathroom.
+        super(area, address, 1, 1, administrationValue);
     }
     @Override
     public int obtainPurchaseValue() {

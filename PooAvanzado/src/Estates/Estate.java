@@ -1,18 +1,21 @@
 package Estates;
 
-public class Estate {
+public abstract class Estate {
     protected int identifier;
     protected int area;
     protected String address;
+    public static int contador = 0;
 
     public Estate() {
-        identifier = 0;
+        contador++;
+        identifier = contador;
         area = 0;
         address = "";
     }
 
-    public Estate(int identifier, int area, String address) {
-        this.identifier = identifier;
+    public Estate(int area, String address) {
+        contador++;
+        this.identifier = contador;
         this.area = area;
         this.address = address;
     }
@@ -29,7 +32,5 @@ public class Estate {
         return address;
     }
 
-    public int obtainPurchaseValue() {
-        return 0;
-    }
+    public abstract int obtainPurchaseValue();
 }

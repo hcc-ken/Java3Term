@@ -2,7 +2,7 @@ package Estates.CommercialProperties;
 
 import Estates.Estate;
 
-public class CommercialProperty extends Estate {
+public abstract class CommercialProperty extends Estate {
     protected boolean locationExterior;
 
     public CommercialProperty() {
@@ -10,8 +10,8 @@ public class CommercialProperty extends Estate {
         locationExterior = false;
     }
 
-    public CommercialProperty(int identifier, int area, String address, boolean locationExterior) {
-        super(identifier, area, address);
+    public CommercialProperty(int area, String address, boolean locationExterior) {
+        super(area, address);
         this.locationExterior = locationExterior;
     }
 

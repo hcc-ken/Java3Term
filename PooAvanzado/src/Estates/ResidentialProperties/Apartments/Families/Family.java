@@ -7,8 +7,8 @@ public class Family extends Apartment {
         super();
     }
 
-    public Family(int identifier, int area, String address, int numberOfRooms, int numbersOfBathrooms, int administrationValue ){
-        super(identifier, area, address, numberOfRooms, numbersOfBathrooms, administrationValue);
+    public Family(int area, String address, int numberOfRooms, int numbersOfBathrooms, int administrationValue ){
+        super(area, address, numberOfRooms, numbersOfBathrooms, administrationValue);
     }
 
     @Override

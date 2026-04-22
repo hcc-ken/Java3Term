@@ -2,7 +2,7 @@ package Estates.ResidentialProperties.Apartments;
 
 import Estates.ResidentialProperties.ResidentialProperty;
 
-public class Apartment extends ResidentialProperty {
+public abstract class Apartment extends ResidentialProperty {
     protected int administrationValue;
 
     public Apartment() {
@@ -10,8 +10,8 @@ public class Apartment extends ResidentialProperty {
         administrationValue = 0;
     }
 
-    public Apartment(int identifier, int area, String address, int numberOfRooms, int numberOfBathrooms, int administrationValue) {
-        super(identifier, area, address, numberOfRooms, numberOfBathrooms);
+    public Apartment(int area, String address, int numberOfRooms, int numberOfBathrooms, int administrationValue) {
+        super(area, address, numberOfRooms, numberOfBathrooms);
         this.administrationValue = administrationValue;
     }
 
