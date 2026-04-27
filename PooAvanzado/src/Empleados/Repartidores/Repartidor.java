@@ -14,5 +14,18 @@ public class Repartidor extends Empleado {
         return zona;
     }
 
+    public void setZona(String zona) {
+        this.zona = zona;
+    }
 
+    @Override
+    public boolean plus() {
+        boolean resultado;
+
+        if (zona.equals("zona 3") && edad < 25) {
+            salario += 300;
+            return true;
+        }
+        return false;
+    }
 }

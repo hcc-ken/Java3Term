@@ -24,4 +24,23 @@ public abstract class Empleado {
     public double getSalario() {
         return salario;
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre " + nombre + "\n edad " + edad + "\n salario " + salario;
+    }
+
+    public abstract boolean plus();
 }
