@@ -30,15 +30,24 @@ public class Main {
         for (int i = 0; i < series.length; i++) {
             if (series[i].isEntregado()) {
                 contadorSerie++;
+                series[i].devolver();
             }
 
             if (videojuegos[i].isEntregado()) {
                 contadorVideojuegos++;
+                videojuegos[i].devolver();
             }
         }
 
         System.out.printf("Hay " + contadorSerie + " series entregados y " +  contadorVideojuegos + " videosjuegos entregados");
 
 
+        Serie serieMasLarga = series [0];
+        for (int i = 1; i < series.length; i++) {
+            int resultadoComparacion = serieMasLarga.compareTo(series[i]);
+            if (resultadoComparacion < 0) {
+                serieMasLarga = series[i];
+            }
+        }
     }
 }
